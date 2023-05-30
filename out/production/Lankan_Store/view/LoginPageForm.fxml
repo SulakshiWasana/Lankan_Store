@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginPageFormContext" prefHeight="683.0" prefWidth="1136.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageFormController">
+   <children>
+      <AnchorPane layoutY="-3.0" prefHeight="697.0" prefWidth="323.0" style="-fx-background-color: #2ecc70;">
+         <children>
+            <ImageView fitHeight="210.0" fitWidth="943.0" layoutX="55.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/SaleLogo.jpg.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="72.0" layoutY="435.0" text="Shop for your favorite ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="469.0" text="ingredients here....">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="652.0" layoutY="44.0" prefHeight="52.0" prefWidth="172.0" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="547.0" layoutY="436.0" prefHeight="39.0" prefWidth="131.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="547.0" layoutY="372.0" prefHeight="39.0" prefWidth="98.0" text="User ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="653.0" layoutY="372.0" prefHeight="39.0" prefWidth="223.0" promptText="Enter ID" style="-fx-background-radius: 30;" />
+      <Button layoutX="430.0" layoutY="555.0" mnemonicParsing="false" onAction="#openCashierHomePageForm" prefHeight="31.0" prefWidth="277.0" style="-fx-background-color: #95a5a6; -fx-background-radius: 30;" text="Login As Cashier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="195.0" fitWidth="165.0" layoutX="629.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/LoginPic.png.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPsw" layoutX="653.0" layoutY="436.0" prefHeight="39.0" prefWidth="223.0" promptText="Enter Password" style="-fx-background-radius: 30;" />
+      <Button layoutX="746.0" layoutY="555.0" mnemonicParsing="false" onAction="#openAdminHomePageForm" prefHeight="31.0" prefWidth="277.0" style="-fx-background-color: #95a5a6; -fx-background-radius: 30;" text="Login As Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
